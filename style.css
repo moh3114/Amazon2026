@@ -343,9 +343,10 @@ ul{
     padding: 0.5rem 0;
 }
 
-.main-container table{
+.product-info table{
     border-bottom: 1px solid rgb(230, 230, 230);
     display: block;
+    margin-bottom: 1rem;
 }
 
 /*************************
@@ -394,4 +395,22 @@ aside button{
 
 .bay-now{
     background-color: rgb(255, 164, 28);
+}
+
+aside tr td:first-child{
+    width: 8rem;
+    color: rgb(112, 106, 104);
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+}
+
+aside tr td:last-child{
+    width: 14rem;
+    font-size: 1.2rem;
+}
+
+aside a:last-of-type{
+    border-bottom:  1px solid rgb(230, 230, 230);
+    display: block;
+    padding: 1rem 0;
 }
