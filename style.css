@@ -205,10 +205,11 @@ end nav
 main container
 *****************/
 
-.main-container{
+.main-container, .deals{
     padding: 1.8rem;
     max-width: 1500px;
     margin: 0 auto;
+    border-bottom: 1px solid rgb(230, 230, 230);
 }
 
 .product-catagory-nav{
@@ -330,7 +331,7 @@ main container
 .issue{
     display: block;
     padding: 1rem 0;
-    border-bottom: 1px solid rgb(230, 230, 230);
+    /* border-bottom: 1px solid rgb(230, 230, 230); */
 }
 
 ul{
@@ -364,6 +365,7 @@ ul{
     width: 24.2rem;
     flex-basis: 24.2rem;
     flex-shrink: 0;
+    height: fit-content;
 }
 
 aside p{
@@ -409,8 +411,81 @@ aside tr td:last-child{
     font-size: 1.2rem;
 }
 
-aside a:last-of-type{
+aside > a:last-of-type{
     border-bottom:  1px solid rgb(230, 230, 230);
     display: block;
     padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+aside > button:last-of-type{
+    margin-top: 1.4rem;
+    background-color: white;
+    border: 2px solid black;
+    text-align: start;
+}
+
+/*************************
+/* end aside
+*************************/
+
+/*************************
+/* deals
+*************************/
+
+.deals{
+    display: flex;
+    align-items: center;
+}
+
+.deals button{
+    padding: 2rem;
+    background-color: white;
+    font-size: 2rem;
+    border: 1px solid rgb(136, 140, 140);
+}
+
+.deals ol{
+    display: flex;
+}
+
+.deals ol li{
+    width: 16rem;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.deals ol li img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.product-title {
+    color: #007185;
+    line-height: 2rem;
+    overflow: hidden;
+}
+
+.stars { color: #f90; font-size: 18px; }
+.rating-count { color: #007185; font-size: 12px; }
+
+.limited-deal {
+    background-color: #cc0c39;
+    color: white;
+    width: fit-content;
+    padding: 4px 8px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.amazons-choice {
+    background-color: #232f3e;
+    color: white;
+    width: fit-content;
+    padding: 2px 8px;
+    font-size: 12px;
 }
